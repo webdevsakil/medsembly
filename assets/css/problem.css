@@ -2,6 +2,13 @@
 header .container .header-top .navbar .navbar-right .main-menu ul {
     list-style-type: none;
 }
+header .container .header-top .navbar .mobile-nav-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    list-style: none;
+}
 /* footer */
 footer ul {
     list-style-type: none;
@@ -41,5 +48,23 @@ footer ul {
     .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
         left: 0%;
         bottom: -17%;
+    }
+    .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+        left: 6%;
+    }
+    .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+        left: -3%;
+        bottom: -15%;
+    }
+    .have-question-section .have-question-wrapper .have-question-left .have-question-img {
+        right: -5%;
+        top: -15%;
+    }
+    .pricing-section .pricing button {
+        left: 48%;
+    }
+    .join-area .get-app .get-app-text h2 {
+        line-height: 50px;
+        font-size: 40px;
     }
 }
