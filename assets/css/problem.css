@@ -1,3 +1,11 @@
+/* header */
+header .container .header-top .navbar .navbar-right .main-menu ul {
+    list-style-type: none;
+}
+/* footer */
+footer ul {
+    list-style-type: none;
+}
 /* for student page */
 /* accordion icon  */
 @media screen and (min-width: 320px) {
@@ -25,5 +33,13 @@
         max-width: 180px;
         display: block;
         margin-left: 15px;
+    }
+}
+
+/* 1400 to 1600 */
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+    .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+        left: 0%;
+        bottom: -17%;
     }
 }
