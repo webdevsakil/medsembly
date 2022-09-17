@@ -1,0 +1,29 @@
+/* for student page */
+/* accordion icon  */
+@media screen and (min-width: 320px) {
+    .faq-section .faq-wrapper .faq .faq-head .faq-icon span {
+        font-size: 20px;
+        margin-top: -5px;
+    }
+}
+/* for profession */
+/* remove padding */
+.professional-offer-section .professional-offer-context ul {
+    padding-left: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .professional-offer-section .professional-offer-context a {
+        margin: 0px;
+    }
+}
+/* button problem fix */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .professional-offer-section .professional-offer-context a {
+        font-size: 14px;
+        margin: 0px;
+        margin-left: 0px;
+        max-width: 180px;
+        display: block;
+        margin-left: 15px;
+    }
+}
