@@ -12964,6 +12964,20 @@ footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form but
 .copy-right-info .footer-bottom-copyright-nav-widget ul li a:hover {
   color: #EA1C2D;
 }
+.copy-right-info .footer-bottom-copyright-nav-widget ul li:first-child a {
+  display: inline-block;
+  position: relative;
+}
+.copy-right-info .footer-bottom-copyright-nav-widget ul li:first-child a::before {
+  position: absolute;
+  top: 3px;
+  right: -25px;
+  height: 16px;
+  width: 1px;
+  content: "";
+  background: #3F3F3F;
+  margin-right: 10px;
+}
 
 @media all and (min-width: 320px) {
   footer.footer-area {
