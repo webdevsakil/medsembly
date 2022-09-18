@@ -7118,6 +7118,7 @@ footer .copyright .copy-right .copyright-links li span {
     padding-top: 20px;
     overflow: hidden;
     transition: all 1s ease;
+    padding-right: 20px;
   }
   .faq-section .faq-wrapper .faq .faq-body p {
     font-size: 17px;
