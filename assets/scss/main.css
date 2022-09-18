@@ -12755,42 +12755,41 @@ footer .copyright .copy-right .copyright-links li span {
   }
 }
 /** Custom & Default Widget **/
-footer.footer-area {
+.footer-area {
   padding-top: 80px;
 }
-footer.footer-area .footer-top .footer-border {
+.footer-area .footer-top .footer-border {
   border-bottom: 1px solid #CCCCCC;
   padding-bottom: 120px;
 }
-footer.footer-area .footer-top-widget h2 {
+.footer-area .footer-top-widget h2 {
   font-size: 20px;
   line-height: 24px;
   color: #333333;
   text-transform: capitalize;
   margin-bottom: 30px;
 }
-footer.footer-area .footer-top-widget .about-widget .logo {
+.footer-area .footer-top-widget .about-widget .logo {
   margin-bottom: 27px;
 }
-footer.footer-area .footer-top-widget .about-widget .logo img {
+.footer-area .footer-top-widget .about-widget .logo img {
   width: 100%;
 }
-footer.footer-area .footer-top-widget .about-widget .content {
+.footer-area .footer-top-widget .about-widget .content {
   margin-bottom: 18px;
 }
-footer.footer-area .footer-top-widget .about-widget .content p {
+.footer-area .footer-top-widget .about-widget .content p {
   font-size: 14px;
   line-height: 17px;
   color: #6D6E71;
 }
-footer.footer-area .footer-top-widget .about-widget .subscribe-form p {
-  margin-bottom: 18px;
-}
-footer.footer-area .footer-top-widget .about-widget .subscribe-form form {
+.footer-area .footer-top-widget .about-widget .subscribe-form form {
   width: 289px;
+}
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe {
   position: relative;
 }
-footer.footer-area .footer-top-widget .about-widget .subscribe-form form input[type=email] {
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe input[type=email] {
   width: 100%;
   height: 46px;
   padding: 0 15px;
@@ -12798,10 +12797,10 @@ footer.footer-area .footer-top-widget .about-widget .subscribe-form form input[t
   border: 0;
   border-radius: 25px;
 }
-footer.footer-area .footer-top-widget .about-widget .subscribe-form form input:focus-visible {
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe input:focus-visible {
   outline: 1px solid #EA1C2D;
 }
-footer.footer-area .footer-top-widget .about-widget .subscribe-form form input[type=submit] {
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe input[type=submit] {
   position: absolute;
   top: 0;
   right: 0;
@@ -12812,7 +12811,7 @@ footer.footer-area .footer-top-widget .about-widget .subscribe-form form input[t
   box-sizing: border-box;
   color: #6F6F6F;
 }
-footer.footer-area .footer-top-widget .about-widget .subscribe-form form button[type=submit] {
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe button[type=submit] {
   position: absolute;
   top: 50%;
   right: 3px;
@@ -12825,36 +12824,40 @@ footer.footer-area .footer-top-widget .about-widget .subscribe-form form button[
   color: #fff;
   transform: translateY(-50%);
 }
-footer.footer-area .footer-top-widget .about-widget .social-profiles ul {
+.footer-area .footer-top-widget .about-widget .subscribe-form form .subscribe p {
+  margin-bottom: 18px;
+  color: #ea1c2d;
+}
+.footer-area .footer-top-widget .about-widget .social-profiles ul {
   padding-left: 0;
 }
-footer.footer-area .footer-top-widget .about-widget .social-profiles ul li {
+.footer-area .footer-top-widget .about-widget .social-profiles ul li {
   display: inline;
   margin: 0 10px;
 }
-footer.footer-area .footer-top-widget .about-widget .social-profiles ul li a {
+.footer-area .footer-top-widget .about-widget .social-profiles ul li a {
   display: inline-block;
   color: #6D6E71;
 }
-footer.footer-area .footer-top-widget .about-widget .social-profiles ul li a:hover {
+.footer-area .footer-top-widget .about-widget .social-profiles ul li a:hover {
   color: #F26957;
 }
-footer.footer-area .footer-top-widget .about-widget .social-profiles ul li:first-child {
+.footer-area .footer-top-widget .about-widget .social-profiles ul li:first-child {
   margin-left: 0;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form p {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form p {
   margin-bottom: 18px;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form form {
   position: relative;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form input[type=email] {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form form input[type=email] {
   width: 100%;
   background-color: #3F3F3F;
   padding: 20px 15px 18px;
   border: 0;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form input[type=submit] {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form form input[type=submit] {
   position: absolute;
   top: 0;
   right: 0;
@@ -12866,7 +12869,7 @@ footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form inp
   box-sizing: border-box;
   color: #6F6F6F;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form button[type=submit] {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form form button[type=submit] {
   position: absolute;
   top: 0;
   right: 0;
@@ -12877,7 +12880,7 @@ footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form but
   background: #3F3F3F;
   box-sizing: border-box;
 }
-footer.footer-area .footer-top-widget .subscribe-widget .subscribe-form form button[type=submit] i {
+.footer-area .footer-top-widget .subscribe-widget .subscribe-form form button[type=submit] i {
   color: #6F6F6F;
 }
 
