@@ -9253,7 +9253,7 @@ footer .copyright .copy-right .copyright-links li span {
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 35%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
@@ -10291,11 +10291,19 @@ footer .copyright .copy-right .copyright-links li span {
   line-height: 28px;
   letter-spacing: -0.02em;
   color: #6D6E71;
+  position: relative;
+  padding-left: 40px;
 }
-.package-section .package-wrapper .package .package-body ul li img {
-  width: 20px;
-  height: 20px;
-  margin-right: 12px;
+.package-section .package-wrapper .package .package-body ul li::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: url("../../images/grepreb/list-icon.svg");
+  background-position: center;
+  content: "";
+  border-radius: 50%;
 }
 .package-section .package-wrapper .package button {
   max-width: 175px;
