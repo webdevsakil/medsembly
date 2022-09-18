@@ -1858,6 +1858,7 @@ header .container .header-top .navbar .navbar-right .main-menu ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style-type: none;
 }
 header .container .header-top .navbar .navbar-right .main-menu ul li {
   padding: 0px 28px;
@@ -1959,10 +1960,12 @@ header .container .header-top .navbar .mobile-nav-wrapper {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   z-index: 1111;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 30px 25px;
   transition: all 0.7s ease;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  list-style: none;
 }
 header .container .header-top .navbar .mobile-nav-wrapper .close-btn {
   width: 70px;
@@ -1972,8 +1975,9 @@ header .container .header-top .navbar .mobile-nav-wrapper .close-btn {
 header .container .header-top .navbar .mobile-nav-wrapper ul {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
+  list-style: none;
 }
 header .container .header-top .navbar .mobile-nav-wrapper ul li {
   margin: 0px 5px 22px 5px;
@@ -2149,6 +2153,12 @@ header .container .header-top .navbar .mobile-nav-wrapper .theme-btn a {
   margin-left: auto;
 }
 
+@media screen and (min-width: 320px) {
+  .faq-section .faq-wrapper .faq .faq-head .faq-icon span {
+    font-size: 20px;
+    margin-top: -5px;
+  }
+}
 .team-section .swiper {
   width: 100%;
   height: 100%;
@@ -6941,6 +6951,9 @@ footer .copyright .copy-right .copyright-links li span {
     font-size: 28px;
     line-height: 40px;
   }
+  .pricing-section {
+    max-width: 100%;
+  }
   .pricing-section .section-title h2 {
     font-size: 45px;
     line-height: 55px;
@@ -7114,9 +7127,12 @@ footer .copyright .copy-right .copyright-links li span {
 @media screen and (min-width: 1800px) and (max-width: 2000px) {
   .have-question-section .have-question-wrapper .have-question-left {
     width: 73%;
-    height: 532px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     position: relative;
     background: #F4F4F4;
+    padding-bottom: 50px;
   }
   .have-question-section .have-question-wrapper .have-question-left .have-question-left-wrapper {
     max-width: 720px;
@@ -7129,6 +7145,114 @@ footer .copyright .copy-right .copyright-links li span {
   .pricing-section .pricing .pricing-bottom {
     border-top: 1px solid #CCCCCC;
     padding: 20px 0 0 20px;
+  }
+}
+/* 1400 to 1600 */
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+  /* for student page */
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: 0%;
+    bottom: -17%;
+  }
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: 6%;
+  }
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: -3%;
+    bottom: -15%;
+  }
+  .have-question-section .have-question-wrapper .have-question-left .have-question-img {
+    right: -5%;
+    top: -15%;
+  }
+  .pricing-section .pricing button {
+    left: 48%;
+  }
+  .join-area .get-app .get-app-text h2 {
+    line-height: 50px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* for student page */
+  .have-question-section .have-question-wrapper .have-question-left .have-question-img {
+    right: -20%;
+    top: 20%;
+  }
+  .for-student-service-section h2 {
+    max-width: 358px;
+  }
+  .pricing-section .pricing {
+    max-height: 470px;
+  }
+  .get-app-text .img-group {
+    margin-top: 20px;
+  }
+  .for-students .faq-section {
+    margin-top: -2px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    top: 30%;
+    left: 6%;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1159px) {
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: 5%;
+  }
+  .pricing-section .pricing {
+    max-height: 580px;
+  }
+  .get-app-text .img-group {
+    margin-top: 35px;
+  }
+  .get-app-text .img-group {
+    margin-top: 35px;
+  }
+  .get-app-text .img-group img {
+    width: 200px;
+  }
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: 5%;
+    top: 50%;
+    z-index: 988;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1359px) {
+  .for-student-banner-section .student-banner-wrapper .student_banner-bottom .banner_award {
+    left: 5%;
+    bottom: -25%;
+  }
+  .have-question-section {
+    margin-top: 200px;
+  }
+  .have-question-section .have-question-wrapper .have-question-left .have-question-img {
+    right: -40%;
+    top: -15%;
+  }
+  .pricing-section .pricing {
+    max-height: 600px;
+  }
+  .join-area .get-app .get-app-img {
+    margin-left: 100px;
+  }
+  .get-app-text h2 {
+    font-size: 40px;
+  }
+  .img-group {
+    margin-top: 40px;
+  }
+}
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+  .get-app-text h2 {
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 500;
+  }
+  .for-students .faq-section {
+    margin-bottom: 100px;
   }
 }
 .become-partner-section {
@@ -7344,6 +7468,9 @@ footer .copyright .copy-right .copyright-links li span {
     line-height: 60px;
     margin: 20px auto;
     text-align: center;
+  }
+  .partner-banner-section .partner-banner-middle .partner-banner-text-two ul {
+    list-style-type: none;
   }
   .partner-banner-section .partner-banner-middle .partner-banner-text-two ul li {
     padding: 12px 15px;
@@ -7707,6 +7834,10 @@ footer .copyright .copy-right .copyright-links li span {
   color: #6D6E71;
 }
 
+.professional-offer-section .professional-offer-context ul {
+  padding-left: 0px;
+}
+
 .professional-offer-section {
   background: #F4F4F4;
   width: 100%;
@@ -7777,6 +7908,17 @@ footer .copyright .copy-right .copyright-links li span {
   z-index: 1;
 }
 
+/* button problem fix */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .professional-offer-section .professional-offer-context a {
+    font-size: 14px;
+    margin: 0px;
+    margin-left: 0px;
+    max-width: 180px;
+    display: block;
+    margin-left: 15px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 1400px) {
   .professional-banner-section .professional-banner-title {
     width: 100%;
@@ -8100,6 +8242,7 @@ footer .copyright .copy-right .copyright-links li span {
   }
   .faq-section {
     max-width: 80%;
+    padding-bottom: 70px;
   }
   .professional-newsletter-section .get-app .get-app-text {
     max-width: 400px;
@@ -8146,6 +8289,58 @@ footer .copyright .copy-right .copyright-links li span {
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .professional-offer-section .professional-offer-context a {
+    margin: 0px;
+  }
+}
+.professional-offer-section .professional-offer-context a {
+  margin: 0px;
+  display: block;
+  margin-left: 15px;
+}
+
+/* for professional page */
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .professional-offer-section {
+    padding: 50px 0px;
+  }
+  .professional-offer-section .professional-offer-context h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .spellon-professional-page.professional-banner-section .professional-banner-middle .middle-content h2 {
+    margin-left: 20px;
+  }
+  .spellon-professional-page.professional-banner-section .professional-banner-middle .middle-content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6d6e71;
+    margin-left: 20px;
+  }
+  .spellon-professional-page.professional-banner-section .professional-banner-bottom .bottom-content {
+    order: 1;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  .spellon-professional-page.professional-offer-section {
+    padding: 60px 0px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .spellon-professional-page.professional-banner-section .professional-banner-bottom .bottom-content {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+  .spellon-professional-page.img-group {
+    margin-top: 40px;
   }
 }
 .resources-banner-section {
@@ -8507,11 +8702,10 @@ footer .copyright .copy-right .copyright-links li span {
     font-size: 15px;
     line-height: 25px;
     padding: 13px 10px;
+    list-style: none;
   }
-  .physician-about-section .physician-about-wrapper .physician-about button {
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .physician-about-section .physician-about-wrapper .physician-about .primary_button {
+    margin-left: 45px;
     padding: 14px 20px;
   }
 }
@@ -8639,77 +8833,41 @@ footer .copyright .copy-right .copyright-links li span {
 }
 
 .discount-section {
-  width: 100%;
-  height: 960px;
-  padding: 30px 0px 100px 0px;
+  padding-bottom: 130px;
 }
-.discount-section .healthcare-wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-}
-.discount-section .healthcare-wrapper .healthcare h2 {
-  max-width: 490px;
-  font-family: "Inter";
-  font-style: normal;
+.discount-section .discount-content .discount-title h2 {
+  font-size: 56px;
+  line-height: 74px;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
-  text-transform: capitalize;
   color: #000000;
-  margin-bottom: 50px;
-  margin-left: 30px;
+  margin-bottom: 40px;
 }
-.discount-section .healthcare-wrapper .healthcare ul li {
-  background: transparent;
-  border-radius: 10px;
-  padding: 23px 23px 23px 25px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
+.discount-section .discount-content .discount-list {
+  list-style-type: none;
+}
+.discount-section .discount-content .discount-list ul {
+  padding-left: 0px;
+}
+.discount-section .discount-content .discount-list ul li {
+  font-size: 32px;
   line-height: 39px;
-  text-transform: capitalize;
+  font-weight: 600;
   color: #6D6E71;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 30px 10px;
-  transition: all 0.7s ease;
-  cursor: pointer;
+  padding: 23px 25px;
+  border-radius: 5px;
 }
-.discount-section .healthcare-wrapper .healthcare ul li span {
-  width: 16px;
-  height: 9px;
-  color: #6D6E71;
-  display: flex;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.7s ease;
-}
-.discount-section .healthcare-wrapper .healthcare ul li:hover {
-  background: #FFFFFF;
-  color: #333333;
-  filter: drop-shadow(8px 10px 60px rgba(0, 0, 0, 0.08));
-}
-.discount-section .healthcare-wrapper .healthcare ul li:hover span {
-  visibility: visible;
-  opacity: 1;
-}
-.discount-section .healthcare-wrapper .healthcare button {
-  margin-left: 23px !important;
+.discount-section .discount-content .discount-list ul li span {
   font-size: 16px;
-  line-height: 26px;
+  color: gray;
 }
-.discount-section .healthcare-wrapper .discount-img {
-  max-width: 613px;
-  max-height: 726px;
+.discount-section .discount-content .discount-list ul li.active {
+  background: #fff;
+  box-shadow: 2px 2px 1px 2px rgba(128, 128, 128, 0.187);
 }
-.discount-section .healthcare-wrapper .discount-img img {
-  width: 100%;
-  height: 100%;
+.discount-section .discount-content .discount-list .discount-btn {
+  padding-left: 25px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1400px) {
@@ -10569,6 +10727,19 @@ footer .copyright .copy-right .copyright-links li span {
     line-height: 30px;
   }
 }
+/* grePeb */
+@media all and (min-width: 320px) {
+  .package-section .package-wrapper .package .package-body ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  footer ul {
+    padding-left: 0px;
+  }
+  .package-section .package-wrapper .package button {
+    margin-top: -20px;
+  }
+}
 .privacy-policy-section {
   padding: 110px 0px;
   max-width: 950px;
@@ -11305,6 +11476,7 @@ footer .copyright .copy-right .copyright-links li span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style-type: none;
 }
 .blog-details-section .blog-details-area .blog-post-items .blog-details-wrapper article .postbox__text .blog-extra .social-share ul li {
   font-family: "Inter";
