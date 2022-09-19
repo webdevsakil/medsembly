@@ -6032,6 +6032,7 @@ footer .copyright .copy-right .copyright-links li span {
   height: 0;
   overflow: hidden;
   transition: all 1s ease;
+  padding-right: 30px;
 }
 .faq-section .faq-wrapper .faq .faq-body p {
   font-family: "Inter";
@@ -7666,12 +7667,12 @@ footer .copyright .copy-right .copyright-links li span {
     line-height: 74px !important;
   }
 }
+.professional-banner-section {
+  padding-bottom: 110px;
+}
 .professional-banner-section .container-fluid {
   margin: 0;
   padding: 0;
-}
-.professional-banner-section .container-fluid .row {
-  --bs-gutter-x: 0;
 }
 .professional-banner-section .container {
   max-width: 1320px;
@@ -7813,20 +7814,18 @@ footer .copyright .copy-right .copyright-links li span {
   bottom: -10%;
   z-index: 1;
 }
-.professional-banner-section .professional-banner-bottom .bottom-content {
-  max-width: 700px;
-}
-.professional-banner-section .professional-banner-bottom .bottom-content h2 {
+.professional-banner-section .bottom-content h2 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 56px;
+  line-height: 74px;
   text-transform: capitalize;
   color: #000000;
   margin-bottom: 25px;
+  max-width: 500px;
 }
-.professional-banner-section .professional-banner-bottom .bottom-content p {
+.professional-banner-section .bottom-content p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -8303,6 +8302,13 @@ footer .copyright .copy-right .copyright-links li span {
   margin-left: 15px;
 }
 
+@media screen and (min-width: 1400px) {
+  .professional-offer-section .professional-offer-context a {
+    margin: 0px;
+    display: block;
+    margin-left: 0px;
+  }
+}
 /* for professional page */
 @media all and (min-width: 320px) and (max-width: 575px) {
   .professional-offer-section {
@@ -8342,6 +8348,14 @@ footer .copyright .copy-right .copyright-links li span {
 @media all and (min-width: 1400px) and (max-width: 1600px) {
   .spellon-professional-page.img-group {
     margin-top: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1400px) {
+  .professional-offer-section .professional-offer-context h2 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 45px;
+    line-height: 55px;
   }
 }
 .resources-banner-section {
@@ -12769,6 +12783,7 @@ footer .copyright .copy-right .copyright-links li span {
   color: #333333;
   text-transform: capitalize;
   margin-bottom: 30px;
+  margin-top: 60px;
 }
 .footer-area .footer-top-widget .about-widget .logo {
   margin-bottom: 27px;
