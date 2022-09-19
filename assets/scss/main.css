@@ -6032,7 +6032,7 @@ footer .copyright .copy-right .copyright-links li span {
   height: 0;
   overflow: hidden;
   transition: all 1s ease;
-  padding-right: 30px;
+  padding-right: 35px;
 }
 .faq-section .faq-wrapper .faq .faq-body p {
   font-family: "Inter";
@@ -6041,8 +6041,14 @@ footer .copyright .copy-right .copyright-links li span {
   font-size: 16px;
   line-height: 32px;
   color: #6D6E71;
+  text-align: justify;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1900px) {
+  .faq-section .faq-wrapper .faq .faq-body {
+    padding-right: 45px;
+  }
+}
 .student-newsletter-section {
   padding: 110px 0px 0 0;
   background-color: #fff;
@@ -6384,7 +6390,10 @@ footer .copyright .copy-right .copyright-links li span {
     justify-content: center;
     align-items: center;
   }
-  .student-newsletter-section .swiper-horizontal > .swiper-pagination-bullets, .student-newsletter-section .swiper-pagination-bullets.swiper-pagination-horizontal, .student-newsletter-section .swiper-pagination-custom, .student-newsletter-section .swiper-pagination-fraction {
+  .student-newsletter-section .swiper-horizontal > .swiper-pagination-bullets,
+.student-newsletter-section .swiper-pagination-bullets.swiper-pagination-horizontal,
+.student-newsletter-section .swiper-pagination-custom,
+.student-newsletter-section .swiper-pagination-fraction {
     bottom: 0px;
     left: 0%;
   }
@@ -7044,7 +7053,10 @@ footer .copyright .copy-right .copyright-links li span {
     justify-content: center;
     align-items: center;
   }
-  .student-newsletter-section .swiper-horizontal > .swiper-pagination-bullets, .student-newsletter-section .swiper-pagination-bullets.swiper-pagination-horizontal, .student-newsletter-section .swiper-pagination-custom, .student-newsletter-section .swiper-pagination-fraction {
+  .student-newsletter-section .swiper-horizontal > .swiper-pagination-bullets,
+.student-newsletter-section .swiper-pagination-bullets.swiper-pagination-horizontal,
+.student-newsletter-section .swiper-pagination-custom,
+.student-newsletter-section .swiper-pagination-fraction {
     bottom: 0px;
     left: -17%;
   }
@@ -7255,6 +7267,11 @@ footer .copyright .copy-right .copyright-links li span {
   }
   .for-students .faq-section {
     margin-bottom: 100px;
+  }
+}
+@media all and (min-width: 992px) {
+  .faq-section .faq-wrapper .faq .faq-body {
+    padding-right: 45px;
   }
 }
 .become-partner-section {
